@@ -172,7 +172,7 @@ if vim.o.background == "dark" then
         helpHeadline = { fg = ansi.blue },
         helpHeader = { fg = ansi.magenta },
 
-        Underlined = { underline = 1 }, -- (preferred) text that stands out, HTML links
+        Underlined = { underline = 0 }, -- (preferred) text that stands out, HTML links
         Italic = { italic = 1 },
 
         -- ("Ignore", below, may be invisible...)
@@ -185,7 +185,7 @@ if vim.o.background == "dark" then
         --- Diagnostic
         LspReferenceText = { bg = "#253437" },
         LspReferenceRead = { bg = "#253437" },
-        LspReferenceWrite = { bg = "#253437", underline = 1, sp = active },
+        LspReferenceWrite = { bg = "#253437", underline = 0, sp = active },
         LspCodeLens = { fg = "#5c5c5c" },
         LspCodeLensSeparator = { fg = "#5c5c5c" },
 
@@ -255,7 +255,7 @@ if vim.o.background == "dark" then
         ["@none"] = { fg = const_fg },
         ["@parameter"] = { fg = ansi.white },
         ["@parameter.reference"] = { fg = ansi.white },
-        ["@property"] = { fg = ansi.brightyellow },
+        ["@property"] = { fg = ansi.white },
         ["@punctuation.delimiter"] = { fg = punct_fg },
         ["@punctuation.bracket"] = { fg = "#bababa" },
         ["@punctuation.special"] = { fg = punct_fg },
@@ -469,7 +469,7 @@ else
         -- Substitute   { }, -- |:substitute| replacement text highlighting
         LineNr = { fg = "#7d7c7c" },
         CursorLineNr = { fg = ansi.blue, bold = 1 },
-        MatchParen = { underline = 1, sp = active },
+        MatchParen = { underline = 0, sp = active, bg = active_blue },
         -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea      { }, -- Area for messages and cmdline
         -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
