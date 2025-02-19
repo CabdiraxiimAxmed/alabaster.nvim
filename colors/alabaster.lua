@@ -94,7 +94,7 @@ if vim.o.background == "dark" then
         -- Substitute   { }, -- |:substitute| replacement text highlighting
         LineNr = { fg = "#5c5c5c" },
         CursorLineNr = { fg = ansi.blue, bold = 1 },
-        MatchParen = { underline = 1, sp = active },
+        MatchParen = { underline = 0, sp = active, bg = active_blue},
         -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea      { }, -- Area for messages and cmdline
         -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -547,7 +547,7 @@ else
         helpHeadline = { fg = ansi.blue },
         helpHeader = { fg = ansi.magenta },
 
-        Underlined = { underline = 1 }, -- (preferred) text that stands out, HTML links
+        Underlined = { underline = 0 }, -- (preferred) text that stands out, HTML links
         Italic = { italic = 1 },
 
         -- ("Ignore", below, may be invisible...)
@@ -560,7 +560,7 @@ else
         --- Diagnostic
         LspReferenceText = { bg = "#dadada" },
         LspReferenceRdad = { bg = "#dadada" },
-        LspReferenceWrite = { bg = "#dadada", underline = 1, sp = active_blue },
+        LspReferenceWrite = { bg = "#dadada", underline = 0, sp = active_blue },
         LspCodeLens = { fg = "#999999" },
         LspCodeLensSeparator = { fg = "#999999" },
 
