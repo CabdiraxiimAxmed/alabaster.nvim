@@ -255,7 +255,7 @@ if vim.o.background == "dark" then
         ["@none"] = { fg = const_fg },
         ["@parameter"] = { fg = ansi.white },
         ["@parameter.reference"] = { fg = ansi.white },
-        ["@property"] = { fg = ansi.white },
+        ["@property"] = { fg = ansi.brightyellow },
         ["@punctuation.delimiter"] = { fg = punct_fg },
         ["@punctuation.bracket"] = { fg = "#bababa" },
         ["@punctuation.special"] = { fg = punct_fg },
