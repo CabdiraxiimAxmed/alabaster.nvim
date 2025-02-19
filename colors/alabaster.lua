@@ -244,7 +244,7 @@ if vim.o.background == "dark" then
         ["@exception"] = { fg = ansi.white },
         ["@field"] = { fg = ansi.white },
         ["@function"] = { fg = ansi.brightyellow },
-        ["@function.builtin"] = { fg = ansi.brightyellow },
+        ["@function.builtin"] = { fg = ansi.white },
         ["@function.macro"] = { fg = ansi.white },
         ["@keyword"] = { fg = ansi.white },
         ["@keyword.function"] = { fg = ansi.white },
