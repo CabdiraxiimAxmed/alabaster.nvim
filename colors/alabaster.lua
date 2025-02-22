@@ -94,7 +94,7 @@ if vim.o.background == "dark" then
         -- Substitute   { }, -- |:substitute| replacement text highlighting
         LineNr = { fg = "#5c5c5c" },
         CursorLineNr = { fg = ansi.blue, bold = 1 },
-        MatchParen = { underline = 0, sp = active, bg = active_blue, fg = active_blue },
+        MatchParen = { bg = ansi.black, fg = fg },
         -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea      { }, -- Area for messages and cmdline
         -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -471,7 +471,7 @@ else
         -- Substitute   { }, -- |:substitute| replacement text highlighting
         LineNr = { fg = "#7d7c7c" },
         CursorLineNr = { fg = ansi.blue, bold = 1 },
-        MatchParen = { underline = 0, sp = active, bg = active_blue, fg = active_blue },
+        MatchParen = {  bg = active_blue },
         -- ModeMsg      { }, -- 'showmode' message (e.g., "-- INSERT -- ")
         -- MsgArea      { }, -- Area for messages and cmdline
         -- MsgSeparator { }, -- Separator for scrolled messages, `msgsep` flag of 'display'
