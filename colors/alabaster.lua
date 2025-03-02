@@ -451,7 +451,7 @@ else
         Conceal = { fg = "#b0b0b0" },
         Cursor = { bg = "#007acc", fg = "#bfdbfe" },
         -- lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
-        -- CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
+        CursorIM     { bg = "#E2EEEE"  }, -- like Cursor, but used when in IME mode |CursorIM|
         CursorColumn = { bg = "#E2EEEE" },
         CursorLine = { bg = "#E2EEEE" },
         Directory = { fg = ansi.blue },
